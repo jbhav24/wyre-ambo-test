@@ -1,6 +1,6 @@
 platform :ios, '11.2'
 
-target 'web3swiftBrowser' do
+target 'Ambo Wyre' do
   use_frameworks!
 #  pod 'Alamofire', '~> 4.5'
 #  pod 'BigInt', '~> 3.0.1'

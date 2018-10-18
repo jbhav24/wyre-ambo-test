@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EBF31E4986D072A51E40CCD7F07A5871"
+               BlueprintIdentifier = "05F820744CE09BE3CB6A95C57914724C"
                BuildableName = "WKBridge.bundle"
                BlueprintName = "WKBridge-WKBridge"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EBF31E4986D072A51E40CCD7F07A5871"
+            BlueprintIdentifier = "05F820744CE09BE3CB6A95C57914724C"
             BuildableName = "WKBridge.bundle"
             BlueprintName = "WKBridge-WKBridge"
             ReferencedContainer = "container:Pods.xcodeproj">

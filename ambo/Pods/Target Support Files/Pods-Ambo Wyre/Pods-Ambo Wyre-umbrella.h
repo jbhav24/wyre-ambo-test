@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_web3swiftBrowserVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_web3swiftBrowserVersionString[];
+FOUNDATION_EXPORT double Pods_Ambo_WyreVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_Ambo_WyreVersionString[];
 

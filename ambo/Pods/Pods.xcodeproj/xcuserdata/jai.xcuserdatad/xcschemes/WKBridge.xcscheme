@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4174C9FF781B3FE355C2D692CB232B37"
+               BlueprintIdentifier = "20F5A4FEDCC2DC71FE68CE09F999E118"
                BlueprintName = "WKBridge"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "WKBridge.framework">

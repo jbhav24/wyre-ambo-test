@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3316A9F8AA587874D04A51540BB22384"
-               BuildableName = "Pods_web3swiftBrowser.framework"
-               BlueprintName = "Pods-web3swiftBrowser"
+               BlueprintIdentifier = "C475652DDCC5C5D932F52268014F18CD"
+               BuildableName = "Pods_Ambo_Wyre.framework"
+               BlueprintName = "Pods-Ambo Wyre"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3316A9F8AA587874D04A51540BB22384"
-            BuildableName = "Pods_web3swiftBrowser.framework"
-            BlueprintName = "Pods-web3swiftBrowser"
+            BlueprintIdentifier = "C475652DDCC5C5D932F52268014F18CD"
+            BuildableName = "Pods_Ambo_Wyre.framework"
+            BlueprintName = "Pods-Ambo Wyre"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
