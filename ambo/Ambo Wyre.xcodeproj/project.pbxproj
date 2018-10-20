@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		285C088F4D20082914992B9C /* Pods_Ambo_Wyre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBAEA9469A4D85FE3E41862E /* Pods_Ambo_Wyre.framework */; };
 		290A1AEA21728E7100D7B3AB /* Fiat.html in Resources */ = {isa = PBXBuildFile; fileRef = 290A1AE921728E7100D7B3AB /* Fiat.html */; };
+		295DBD37217BDF440099BBDE /* bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 295DBD36217BDF440099BBDE /* bundle.js */; };
 		81E09B202002623A005DF51D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E09B1F2002623A005DF51D /* AppDelegate.swift */; };
 		81E09B222002623A005DF51D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E09B212002623A005DF51D /* ViewController.swift */; };
 		81E09B252002623A005DF51D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E09B232002623A005DF51D /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		290A1AE921728E7100D7B3AB /* Fiat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Fiat.html; sourceTree = "<group>"; };
+		295DBD36217BDF440099BBDE /* bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bundle.js; sourceTree = "<group>"; };
 		81E09B1C2002623A005DF51D /* Ambo Wyre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ambo Wyre.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E09B1F2002623A005DF51D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81E09B212002623A005DF51D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				81E09B5F2002C0FF005DF51D /* Web3Swift.js */,
+				295DBD36217BDF440099BBDE /* bundle.js */,
 				290A1AE921728E7100D7B3AB /* Fiat.html */,
 				81E09B1F2002623A005DF51D /* AppDelegate.swift */,
 				81E09B212002623A005DF51D /* ViewController.swift */,
@@ -269,6 +272,7 @@
 			files = (
 				290A1AEA21728E7100D7B3AB /* Fiat.html in Resources */,
 				81E09B2D2002623A005DF51D /* LaunchScreen.storyboard in Resources */,
+				295DBD37217BDF440099BBDE /* bundle.js in Resources */,
 				81E09B602002C100005DF51D /* Web3Swift.js in Resources */,
 				81E09B2A2002623A005DF51D /* Assets.xcassets in Resources */,
 				81E09B252002623A005DF51D /* Main.storyboard in Resources */,

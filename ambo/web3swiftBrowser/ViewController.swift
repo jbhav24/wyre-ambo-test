@@ -17,7 +17,7 @@ enum JSRequestsError: String {
     case dataIsInvalid = ""
 }
 
-class BrowserViewController: UIViewController {
+class BrowserViewController: UIViewController, WKNavigationDelegate {
     
     enum Method: String {
         case getAccounts
@@ -39,16 +39,17 @@ class BrowserViewController: UIViewController {
         )
         webView.allowsBackForwardNavigationGestures = true
         webView.scrollView.isScrollEnabled = true
+        webView.navigationDelegate = self
         webView.configuration.preferences.setValue(true, forKey: "developerExtrasEnabled")
         return webView
     }()
-    
+
     lazy var config: WKWebViewConfiguration = {
         let config = WKWebViewConfiguration()
         
         var js = ""
         
-        if let filepath = Bundle.main.path(forResource: "Web3Swift", ofType: "js") {
+        if let filepath = Bundle.main.path(forResource: "bundle", ofType: "js") {
             do {
                 js += try String(contentsOfFile: filepath)
                 NSLog("Loaded web3swift.js")
@@ -62,7 +63,6 @@ class BrowserViewController: UIViewController {
         config.userContentController.addUserScript(userScript)
         return config
     }()
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
