@@ -76,8 +76,8 @@ class BrowserViewController: UIViewController, WKNavigationDelegate {
             webView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
         
-        let url = Bundle.main.url(forResource: "Fiat", withExtension:"html")!
-        webView.load(URLRequest(url: url))
+//        let url = Bundle.main.url(forResource: "Fiat", withExtension:"html")!
+        webView.load(URLRequest(url: URL(string: "https://www.mycrypto.com")!))
         do {
             let userDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
             let keystoreManager = KeystoreManager.managerForPath(userDir + "/keystore")
@@ -107,6 +107,8 @@ class BrowserViewController: UIViewController, WKNavigationDelegate {
                 completion(.success(["coinbase": coinbase as Any]))
             }, for: "eth_coinbase")
             
+            print(webView.bridge.evaluate("eth_coinbase"))
+
             self.webView.bridge.register({ (parameters, completion) in
                 guard let parameters = parameters,
                     let payload = parameters["payload"] as? [String:Any] else {
@@ -125,7 +127,7 @@ class BrowserViewController: UIViewController, WKNavigationDelegate {
                 }
                 completion(.success(["signedMessage": result as Any]))
             }, for: "eth_sign")
-            
+
             self.webView.bridge.register({ (parameters, completion) in
                 guard let parameters = parameters else {
                     completion(.failure(Bridge.JSError(code: 0, description: JSRequestsError.noParamaters.rawValue)))
@@ -136,7 +138,7 @@ class BrowserViewController: UIViewController, WKNavigationDelegate {
                     completion(.failure(Bridge.JSError(code: 0, description: JSRequestsError.notEnoughParameters.rawValue)))
                     return
                 }
-                
+
                 guard let result = web3.browserFunctions.signTransaction(transaction) else {
                     completion(.failure(Bridge.JSError(code: 0, description: JSRequestsError.dataIsInvalid.rawValue)))
                     return

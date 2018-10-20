@@ -65013,6 +65013,6 @@ arguments[4][174][0].apply(exports,arguments)
         }
     }()
 }());
-/* window.bridge.post('test', {'key': 'value'}, (parameters, error)=>{ <# print parameters, error #> }); */
-/* var unregisterHandler = window.bridge.on('userDidLogin', (parameters) => { <# receive notify from native #> } ); Call unregisterHandler() when cancel a listen. */
+// window.bridge.post('test', {'key': 'value'}, (parameters, error)=>{  print parameters, error  }); 
+/* var unregisterHandler = window.bridge.on('userDidLogin', (parameters) => {  receive notify from native  } ); Call unregisterHandler() when cancel a listen. */
 },{}]},{},[175]);
