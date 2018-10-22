@@ -80,6 +80,7 @@ class BrowserViewController: UIViewController, WKNavigationDelegate {
         webView.load(URLRequest(url: URL(string: "https://www.mycrypto.com")!))
         do {
             let userDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+            print(userDir)
             let keystoreManager = KeystoreManager.managerForPath(userDir + "/keystore")
             var ks: EthereumKeystoreV3?
             if (keystoreManager?.addresses?.count == 0) {
