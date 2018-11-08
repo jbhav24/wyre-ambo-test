@@ -18,6 +18,7 @@
 		81E09B382002623B005DF51D /* web3swiftBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E09B372002623B005DF51D /* web3swiftBrowserTests.swift */; };
 		81E09B432002623B005DF51D /* web3swiftBrowserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E09B422002623B005DF51D /* web3swiftBrowserUITests.swift */; };
 		81E09B602002C100005DF51D /* Web3Swift.js in Resources */ = {isa = PBXBuildFile; fileRef = 81E09B5F2002C0FF005DF51D /* Web3Swift.js */; };
+		AB3E2DA2AADA3CE149FB2C26 /* Pods_Ambo_Wyre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E1D6FFD7189AB2688355CF /* Pods_Ambo_Wyre.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 /* Begin PBXFileReference section */
 		290A1AE921728E7100D7B3AB /* Fiat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Fiat.html; sourceTree = "<group>"; };
 		295DBD36217BDF440099BBDE /* bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bundle.js; sourceTree = "<group>"; };
+		420B39A858B6BC1E5383E270 /* Pods-Ambo Wyre.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ambo Wyre.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ambo Wyre/Pods-Ambo Wyre.release.xcconfig"; sourceTree = "<group>"; };
+		73441C46F0BF3EB3DC5514A7 /* Pods-Ambo Wyre.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ambo Wyre.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ambo Wyre/Pods-Ambo Wyre.debug.xcconfig"; sourceTree = "<group>"; };
 		81E09B1C2002623A005DF51D /* Ambo Wyre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ambo Wyre.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E09B1F2002623A005DF51D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81E09B212002623A005DF51D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +58,7 @@
 		81E09B422002623B005DF51D /* web3swiftBrowserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = web3swiftBrowserUITests.swift; sourceTree = "<group>"; };
 		81E09B442002623B005DF51D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81E09B5F2002C0FF005DF51D /* Web3Swift.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Web3Swift.js; sourceTree = "<group>"; };
+		92E1D6FFD7189AB2688355CF /* Pods_Ambo_Wyre.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ambo_Wyre.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB3E2DA2AADA3CE149FB2C26 /* Pods_Ambo_Wyre.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C0CAF8D999D82B5D653E419 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73441C46F0BF3EB3DC5514A7 /* Pods-Ambo Wyre.debug.xcconfig */,
+				420B39A858B6BC1E5383E270 /* Pods-Ambo Wyre.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		81E09B132002623A005DF51D = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +103,8 @@
 				81E09B362002623B005DF51D /* web3swiftBrowserTests */,
 				81E09B412002623B005DF51D /* web3swiftBrowserUITests */,
 				81E09B1D2002623A005DF51D /* Products */,
+				4C0CAF8D999D82B5D653E419 /* Pods */,
+				DD39D54F5BECEB46372D24E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +153,14 @@
 			path = web3swiftBrowserUITests;
 			sourceTree = "<group>";
 		};
+		DD39D54F5BECEB46372D24E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92E1D6FFD7189AB2688355CF /* Pods_Ambo_Wyre.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81E09B472002623B005DF51D /* Build configuration list for PBXNativeTarget "Ambo Wyre" */;
 			buildPhases = (
+				9279219588695F6BCD760382 /* [CP] Check Pods Manifest.lock */,
 				81E09B182002623A005DF51D /* Sources */,
 				81E09B192002623A005DF51D /* Frameworks */,
 				81E09B1A2002623A005DF51D /* Resources */,
+				65EE154171AE181C58587675 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -268,6 +294,73 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65EE154171AE181C58587675 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ambo Wyre/Pods-Ambo Wyre-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AwaitKit/AwaitKit.framework",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftRLP/SwiftRLP.framework",
+				"${BUILT_PRODUCTS_DIR}/WKBridge/WKBridge.framework",
+				"${BUILT_PRODUCTS_DIR}/scrypt/scrypt.framework",
+				"${BUILT_PRODUCTS_DIR}/secp256k1_swift/secp256k1_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/web3swift/web3swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AwaitKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftRLP.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WKBridge.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/scrypt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/secp256k1_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/web3swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ambo Wyre/Pods-Ambo Wyre-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9279219588695F6BCD760382 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ambo Wyre-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		81E09B182002623A005DF51D /* Sources */ = {
@@ -440,6 +533,7 @@
 		};
 		81E09B482002623B005DF51D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73441C46F0BF3EB3DC5514A7 /* Pods-Ambo Wyre.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -456,6 +550,7 @@
 		};
 		81E09B492002623B005DF51D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 420B39A858B6BC1E5383E270 /* Pods-Ambo Wyre.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
