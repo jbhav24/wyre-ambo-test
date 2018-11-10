@@ -78,6 +78,9 @@ class BrowserViewController: UIViewController, WKNavigationDelegate {
         
         let url = Bundle.main.url(forResource: "Fiat", withExtension:"html")!
         webView.load(URLRequest(url: url))
+//        webView.load(URLRequest(url: URL(string: "http://www.mycrypto.com")!))
+//        webView.load(URLRequest(url: URL(string: "https://s3-us-west-2.amazonaws.com/demo.sendwyre.com/index.html")!))
+
         do {
             let userDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
             print(userDir)
